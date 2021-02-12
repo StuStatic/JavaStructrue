@@ -1,4 +1,4 @@
-package class1;
+package structrue;
 
 /**
  * 环形队列

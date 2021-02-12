@@ -1,4 +1,4 @@
-package class1;
+package structrue;
 
 /**
  * 单链表
@@ -31,7 +31,7 @@ public class LinkedList_04 {
 //        ListNode.print();
 
         //测试链表反转
-        ListNode listNode = ListNode.reverse(head);
+        ListNode listNode = ListNode.revert(head);
         ListNode.revertPrint(listNode);
     }
 }
@@ -92,15 +92,15 @@ class ListNode {
     }
 
     //链表反转
-    public static ListNode reverse(ListNode head) {
+    public static ListNode revert(ListNode head) {
         ListNode front = head;//01
         ListNode after = head.next;//02
         ListNode temp;
         while (after != null) {
             temp = after.next;//03
             after.next = front;//02->01
-            front = after;//01
-            after = temp;
+            front = after;//02 = 01
+            after = temp;//03 = 02
         }
         head.next = null;
         return front;
@@ -126,10 +126,10 @@ class ListNode {
         }
     }
 
-    public static void revertPrint(ListNode listNode){
+    public static void revertPrint(ListNode listNode) {
         ListNode temp = listNode;//遍历用到的临时变量
         while (true) {
-            if(temp.next == null){
+            if (temp.next == null) {
                 break;
             }
             System.out.println(temp.data);

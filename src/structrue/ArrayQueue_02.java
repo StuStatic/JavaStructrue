@@ -1,4 +1,4 @@
-package class1;
+package structrue;
 
 import java.util.Scanner;
 
