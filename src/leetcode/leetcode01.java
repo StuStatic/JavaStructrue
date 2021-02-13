@@ -6,7 +6,7 @@ import static jdk.nashorn.internal.objects.Global.println;
 
 /**
  * created by stu on 2021/2/12
- * 两数只和，返回数组中两个元素的下标
+ * 已知两数只和，返回数组中两个元素的下标
  *
  * @method1 暴力法：定义两个指针分别遍历数组
  * @method2 以此循环法：定义hashmap方法，外层循环遍历数组，内层循坏遍历hashmap，若发现数组中的值与map中的值和为9即返回下角标
