@@ -21,7 +21,7 @@ public class leetcode02 {
         }
 
         //关键步骤：定义两个下标变量，根据条件进行自增
-        int i = 0, j = 1, indexNum = nums.length;
+        int i = 0, j = 1;
         while (j < nums.length) {
             if (nums[i] == nums[j]) {
                 j++;
